@@ -65,9 +65,9 @@ public class DragView extends View {
                 downY = moveY;
                 break;
             case MotionEvent.ACTION_UP:
-               /* View view=(View)getParent();
+                View view=(View)getParent();
                 scroller.startScroll(view.getScrollX(),view.getScrollY(),-view.getScrollX(),-view.getScrollY(),2000);
-                invalidate();*/
+                invalidate();
                 break;
         }
         return true;
