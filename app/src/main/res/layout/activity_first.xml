@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="explode"
+    android:text="explode分解"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="slide"
+    android:background="?android:attr/selectableItemBackgroundBorderless"
+    android:text="slide滑动"/><!--无界波纹!-->
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="fade"
+    android:background="?android:attr/selectableItemBackground"
+    android:text="fade淡出"/><!--有界波纹!-->
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="share"
+    android:transitionName="share"
+    android:text="share共享属性"/>
+<Button
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="fab"
+    android:elevation="5dp"
+    android:transitionName="fab"
+    android:background="@drawable/ripple"/>
+<ImageView
+    android:id="@+id/oval"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="@drawable/ripple"/>
+<ImageView
+    android:id="@+id/rect"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="@drawable/rect"/>
+
+</LinearLayout>
